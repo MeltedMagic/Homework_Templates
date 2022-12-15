@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=0.75in, bottom=0.75in, left=0.75in, right=0.75in} % *1
+
+% --- Import Font Packages Here: 
+\usepackage{noto}
+% \usepackage{noto-mono} ~ for a monospaced font
+\usepackage[T1]{fontenc}
+\normalfont
+% \usepackage{baskervillef}
+% \usepackage[varqu,varl,var0]{inconsolata}
+% \usepackage[scale=.95,type1]{cabin}
+% \usepackage[baskerville,vvarbb]{newtxmath}
+% \usepackage[cal=boondoxo]{mathalfa} 
+
+
+% --- Enter Information Here
+\newcommand\Name{Manu Samala} 
+\newcommand\Class{Class Name}
+\newcommand\Date{30/01/2021} % Due Date
+\newcommand\Title{Homework Assignment 4} % Name of Homework Assignment
+% --- Information block
+
+% --- File-Only Packages
+\usepackage{amsmath}
+
+% Custom Macros
+\newcommand{\nextpage}{\newpage \noindent \Title \newline}
+
+% Fancy-header package
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\lhead{} % Text on left-side of page, very close to the top 
+\chead{} 
+\rhead{Page \thepage} % Page number
+\lfoot{} 
+\cfoot{} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+\setlength\headsep{0.333in} % *2
+
+
+%Begin document
+\begin{document}
+    \begin{flushleft} % left-justified text
+
+        % Header Information
+        \Name\\ % Name
+        \Class\\ % Name of Class
+        \Date\\ % Date
+
+        \begin{center}
+            \Title
+        \end{center}
+        \setlength{\parindent}{0.25in} % paragraph indentation
+        \setlength{\parskip}{1em} % paragraph line-spacing
+        %%%%Begin body of paper here
+        % --- Personal Note ---
+        %   It would be better to import a file and compile it through
+        %       the template
+        \textbf{Question 1:} What is this question supposed to be?\\
+            This question is supposed to be nonsensical as to be replaced in
+            the future when used in an actual homework assignment. 
+            $a < b \implies a + c < b + c $
+
+        \noindent
+        \textbf{Question 2:} What is this question supposed to be?\\
+            This question is supposed to be nonsensical as to be replaced in
+            the future when used in an actual homework assignment.
+
+        \noindent
+        \textbf{Question 3:} What is this question supposed to be?\\
+            This question is supposed to be nonsensical as to be replaced in
+            the future when used in an actual homework assignment.
+
+        \nextpage
+
+        \noindent
+        \textbf{Question 1:} What is this question supposed to be?\\
+            This question is supposed to be nonsensical as to be replaced in
+            the future when used in an actual homework assignment. 
+            $a < b \implies a + c < b + c $
+
+    \end{flushleft}
+   
+\end{document}
+
+% *-references
+%
+%--------------------------------------------
+% *1 -- overall margin of 0.75in
+% *2
+%---To make sure we actually have header 0.5in away from top edge
+%---12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+
+% Font options
+%----- \usepackage{venturis2}; Venturis 2 font
+%----- \usepackage{libertinegc} ; Linux Libertine
+%----- \usepackage[bitstream-charter]{mathdesign} -- This interferes
+%%---------- with ayssymb

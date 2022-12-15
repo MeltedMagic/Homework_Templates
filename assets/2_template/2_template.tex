@@ -1,0 +1,65 @@
+\documentclass[12pt,oneside,geqno]{article}
+\addtolength{\textheight}{120pt}
+\oddsidemargin=-10pt
+\topmargin=-.75in
+\textwidth=6.5in
+\pagestyle{empty}
+
+\usepackage{amssymb,latexsym,amsmath,amsthm}
+\usepackage{amsfonts,rawfonts}
+\usepackage{thmtools}
+\usepackage{systeme}
+\usepackage{mathtools}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{xfrac}
+
+\declaretheoremstyle[
+headfont=\color{blue}\normalfont\bfseries,
+notefont=\bfseries, 
+notebraces={}{},
+%bodyfont=\color{red}\normalfont\itshape,
+bodyfont=\normalfont,%\itshape,
+%headformat=\NUMBER.~\NAME\NOTE
+headformat=\NAME\NOTE
+]{colorQ}
+
+\declaretheorem[
+%numbered=no,
+style=colorQ,
+name=Question
+]{Question}
+
+% --- Enter information here
+\newcommand\Name{Manu Samala} 
+\newcommand\Class{Class Name}
+\newcommand\PSet{Problem Set}
+\newcommand\Date{\today} % Due Date
+\newcommand\Title{Homework Assignment 4} % Name of Homework Assignment
+
+% --- Custom macros
+\newcommand\I{\indent}
+\newcommand\NI{\noindent}
+\newcommand\la{\lambda}
+\newcommand\R{\rightarrow}
+
+\begin{document}
+
+\begin{flushleft}
+	\Name\\
+	\Class\hspace{60pt}	\PSet\\
+	\Date\\
+\end{flushleft}
+
+\begin{center}
+{\bf Homework 2}
+%{\bf  \color{red}{(Soluci\'on)}}
+\end{center}
+
+\begin{Question}[1] 
+\end{Question}
+\begin{proof}[\underline{Solution}]
+	\hfill \break
+\end{proof}
+
+\end{document}
